@@ -589,6 +589,12 @@ button.w3view-cart {
 .men-pro-item {
     position: relative;
 }
+
+/*added by WG*/
+.men-thumb-item img {
+    width: 100% !important;
+}
+
 .men-thumb-item {
     position: relative;
 }

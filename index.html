@@ -115,7 +115,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			
 			<!-- product left -->
-			<div class="side-bar col-md-3">
+			<div class="side-bar col-md-3 ying">
 				<div class="search-hotel">
 					<h3 class="agileits-sear-head">Filter</h3>
 					<form action="#" method="post">
@@ -284,7 +284,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<!-- //product left -->
 			<!-- product right -->
-			<div class="agileinfo-ads-display col-md-9">
+			<div class="agileinfo-ads-display col-md-9 yang">
 				<div class="wrapper">
 					<!-- first section (nuts) -->
 					<div class="product-sec1">
@@ -301,8 +301,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
-									<h4> Online Course</h4>
-									<p>	Reading Dovotesky</p>
+									<h4 class="srasorange"> Online Course</h4>
+									<h5>Reading Dovotesky</h5>
 									<p>Feb 6, 2021</p>
 									
 									<div class="info-product-price">
@@ -326,8 +326,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange"> Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
@@ -351,8 +351,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
@@ -382,12 +382,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<span class="product-new-top">New</span>
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
-										<span class="item_price">Fall Spring</span>
+										<span class="item_price">$120</span>
 										
 									</div>
 
@@ -407,12 +407,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
-										<span class="item_price">Fall Spring</span>
+										<span class="item_price">$30</span>
 										
 									</div>
 
@@ -432,8 +432,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
@@ -461,8 +461,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</div>
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
@@ -486,8 +486,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
@@ -511,8 +511,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 								</div>
 								<div class="item-info-product ">
-									<h4> Study Abroad</h4>
-									<p>	Identity and Conflict in the Post-Soviet Space</p>
+									<h4 class="srasorange" > Study Abroad</h4>
+									<h5>	Identity and Conflict in the Post-Soviet Space</h5>
 									<p>Kyiv, Ukraine</p>
 									
 									<div class="info-product-price">
@@ -654,44 +654,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 	<!-- //flexisel (for special offers) -->
 
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
 
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
-
-	<!-- smoothscroll -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<!-- //smoothscroll -->
-
-	<!-- start-smooth-scrolling -->
-	<script src="js/move-top.js"></script>
-	<script src="js/easing.js"></script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
 
 	<!-- smooth-scrolling-of-move-up -->
 	<script>

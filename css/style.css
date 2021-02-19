@@ -61,14 +61,17 @@ label{
 	margin:0;
 }
 /* top-header */
-.header-most-top p {
+.header-most-top {
     text-align: center;
-    color: #fff;
-    font-weight: 600;
     padding: 8px;
     letter-spacing: 2px;
-    background: #1accfd;
+    background: #f7f7f7;
 }
+
+ul.one_side_align li {
+display: inline;
+}
+
 /* //top-header */
 /*-- header-bottom --*/
 /*-- Header Lists --*/
@@ -80,7 +83,6 @@ label{
     font-size: 13px;
     padding: 7px 0;
     letter-spacing: 1px;
-    border-right: 1px solid rgba(18, 18, 18, 0.18);
 }
 .header ul li a {
      color: #000;
@@ -105,6 +107,20 @@ label{
 .item-info-product h5 {
     font-weight: 600;
     color: #909090;
+}
+
+/*FOR HEART ICON*/
+
+.glyphicon {
+    position: relative;
+    top: 7px;
+}
+
+/*Icon hover*/
+
+i.glyphicon.glyphicon-heart-empty:hover {
+    color: #ff5722;
+    text-shadow: none;
 }
 
 /*-- shop locator --*/
@@ -336,6 +352,18 @@ a.nav-stylehead {
 .multi-gd-img img {
     margin-top: 60px;
 }
+
+/*NE Nav 19 Feb 2021*/
+
+ul.updatednav {
+    margin-top: 2em;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 65%;
+    float: right;
+    text-align: center;
+}
+
 /*-- navigation-dropdown --*/
 ul.multi-column-dropdown li {
     list-style-type: none;
@@ -644,23 +672,24 @@ button.w3view-cart {
     visibility: hidden;
 }
 .product-men:nth-child(3) .product-new-top {
-    background: #FFC107;
+    background: transparent;
 }
 .product-men:nth-child(4) .product-new-top {
-    background: #219ff3;
+    background: transparent;
 }
 .product-new-top {
-    background: #fc636b;
+    background: transparent;
     color: #fff;
     right: 0;
     position: absolute;
     top: 0;
     width: 45px;
-    font-size: 13px;
+    font-size: 28px;
+    text-shadow: 0px 0px 3px #00000096;
     height: 45px;
     text-align: center;
     border-radius: 50%;
-    line-height: 3.3;
+    line-height: 1.3;
 }
 .inner-men-cart-pro {
     height: 100%;
@@ -684,15 +713,20 @@ button.w3view-cart {
     position: absolute;
     transition: all 0.5s ease-out 0s;
 }
+
 .link-product-add-cart {
-    background:#FF5722;
+    background: #08a718;
+    border-radius: 6px;
     color: #fff;
+    font-weight: 600;
+    text-shadow: 1px 0px 0px #000;
     display: inline-block;
     height: 40px;
     line-height: 40px;
-    text-transform: uppercase;
+     text-transform: capitalize; 
     transition: all 0.5s ease-out 0s;
 }
+
 .inner-men-cart-pro > ul > li {
     display: inline-block;
 }
@@ -733,7 +767,7 @@ button.w3view-cart {
     top: 73%;
 }
 .link-product-add-cart:hover {
-    background: #000;
+    background: #ff5722;
     color: #fff;
 }
 /*-- //effect on products --*/
@@ -841,7 +875,7 @@ button.w3view-cart {
 }
 .search-hotel form input[type="submit"]{
   background: url(../images/search.png) no-repeat 13px 11px #1accfd;
-  width: 44px;
+  width: 36px;
   height: 39px;
   border: none;
   padding:0;
@@ -851,10 +885,18 @@ button.w3view-cart {
   padding: 15px;
   background:#f5f4f0;
 }
-  h3.agileits-sear-head {
+  
+  h3.agileits-sear-head2 {
     color: #151414;
     margin-bottom: 20px;
     font-size: 21px;
+    font-weight: 600;
+}
+
+  h3.agileits-sear-head {
+    color: #151414;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 .search-hotel{
     padding: 15px 0;
@@ -890,6 +932,17 @@ input#amount,input#amount1 {
     padding: 25px 0 30px 0;
     border-bottom: 1px solid #e5e3db; 
 }
+
+/*overflow css for the sidebar*/
+div.ovflow {
+    background-color: #eee;
+  width: 100%;
+  height: 202px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
 .side-bar {
     background-color: #F9F9F9;
 	padding: 25px 15px;
@@ -1644,6 +1697,7 @@ ul.w3_short {
 .icon-box:hover a.agile-icon {
 	color:#fff !important;
 }
+
 .codes .bs-glyphicons li {
     float: left;
     width: 12.5%;
